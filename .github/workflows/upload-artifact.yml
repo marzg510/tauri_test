@@ -1,12 +1,13 @@
 name: 'upload-artifact'
 on:
-  workflow_run:
-    workflows:
-      - publis
-    branches: 
-      - main
-    types:
-      - completed
+  workflow_dispatch
+#   workflow_run:
+#     workflows:
+#       - publis
+#     branches: 
+#       - main
+#     types:
+#       - completed
 
 jobs:
   upload-win:
