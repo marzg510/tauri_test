@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: win-upload-af
-          path: D:\a\tauri_test\tauri_test\kanban\src-tauri\target\release\bundle\msi\kanban_0.0.0_x64_en-US.msi
+          path: D:/a/tauri_test/tauri_test/kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
