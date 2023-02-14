@@ -6,6 +6,10 @@ on:
 #      - release
 #      - main
 
+defaults:
+  run:
+    working-directory: './kanban/'
+
 jobs:
   publish-tauri:
     permissions:
