@@ -26,4 +26,5 @@ jobs:
         with:
           name: win-upload-af
 #           path: D:/a/tauri_test/tauri_test/kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
-          path: ./kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
+#          path: ./kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
+          path: /home/runner/work/tauri_test/tauri_test/kanban/src-tauri/target/release/bundle/deb/kanban_0.0.0_amd64.deb
