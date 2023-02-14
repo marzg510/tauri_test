@@ -1,0 +1,27 @@
+name: 'upload-artifact'
+on:
+  workflow_run:
+    workflows:
+      - publis
+    branches: 
+      - main
+    types:
+      - completed
+
+jobs:
+  upload-win:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [macos-latest, ubuntu-20.04, windows-latest]
+
+#    runs-on: ${{ matrix.platform }}
+    runs-on: windows-latest
+    steps:
+      - name: windows-upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: win-upload-af
+          path: D:\a\tauri_test\tauri_test\kanban\src-tauri\target\release\bundle/msi/kanban_0.0.0_x64_en-US.msi
