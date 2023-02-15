@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: ls-artifact
         run:
-          ls -ltR /home/runner/work/tauri_test/tauri_test/kanban/src-tauri/target/release/
+          ls -R /home/runner/work/tauri_test/tauri_test/kanban/src-tauri/target/release/
       - name: windows-upload-artifact
         uses: actions/upload-artifact@v3
         with: 
