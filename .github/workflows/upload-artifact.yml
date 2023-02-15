@@ -21,9 +21,12 @@ jobs:
 #    runs-on: ${{ matrix.platform }}
     runs-on: windows-latest
     steps:
+      - name: ls-artifact
+        run:
+          ls -ltR /home/runner/work/tauri_test/tauri_test/kanban/src-tauri/target/release/
       - name: windows-upload-artifact
         uses: actions/upload-artifact@v3
-        with:
+        with: 
           name: win-upload-af
 #           path: D:/a/tauri_test/tauri_test/kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
 #          path: ./kanban/src-tauri/target/release/bundle/msi/kanban_0.0.0_x64_en-US.msi
